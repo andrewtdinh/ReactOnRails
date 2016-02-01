@@ -8,7 +8,6 @@ class Main extends React.Component {
   }
 }
 
-
 let documentReady = () => {
   React.render(
     <Main />,
@@ -16,4 +15,4 @@ let documentReady = () => {
   );
 };
 
-$(documentReady)
+$(documentReady);
