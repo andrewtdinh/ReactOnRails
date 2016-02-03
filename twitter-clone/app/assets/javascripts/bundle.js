@@ -195,33 +195,24 @@
 	        null,
 	        React.createElement(
 	          "ul",
-	          null,
+	          { className: "collection" },
 	          React.createElement(
 	            "li",
-	            { "class": "collection-item avatar" },
+	            { className: "collection-item avatar" },
 	            React.createElement(
 	              "i",
-	              { "class": "material-icons circle" },
+	              { className: "material-icons circle" },
 	              "person_pin"
 	            ),
 	            React.createElement(
 	              "span",
-	              { "class": "title" },
+	              { className: "title" },
 	              "Andrew Dinh"
 	            ),
 	            React.createElement(
 	              "p",
 	              null,
 	              "My #FirstTweet"
-	            ),
-	            React.createElement(
-	              "a",
-	              { href: "#!", "class": "secondary-content" },
-	              React.createElement(
-	                "i",
-	                { "class": "material-icons" },
-	                "grade"
-	              )
 	            )
 	          )
 	        )
