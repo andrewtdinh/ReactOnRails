@@ -131,21 +131,25 @@
 	    key: "render",
 	    value: function render() {
 	      return React.createElement(
-	        "form",
-	        null,
+	        "div",
+	        { className: "row" },
 	        React.createElement(
-	          "div",
-	          { className: "input-field" },
-	          React.createElement("textarea", { className: "materialize-textarea" }),
+	          "form",
+	          null,
 	          React.createElement(
-	            "label",
-	            null,
-	            "What's happening?"
-	          ),
-	          React.createElement(
-	            "button",
-	            { className: "btn right" },
-	            "Tweet"
+	            "div",
+	            { className: "input-field" },
+	            React.createElement("textarea", { className: "materialize-textarea" }),
+	            React.createElement(
+	              "label",
+	              null,
+	              "What's happening?"
+	            ),
+	            React.createElement(
+	              "button",
+	              { className: "btn right" },
+	              "Tweet"
+	            )
 	          )
 	        )
 	      );
