@@ -126,12 +126,12 @@
 	    key: "render",
 	    value: function render() {
 	      return React.createElement(
-	        "div",
+	        "form",
 	        null,
 	        React.createElement(
-	          "form",
-	          null,
-	          React.createElement("textarea", null),
+	          "div",
+	          { className: "input-field" },
+	          React.createElement("textarea", { className: "materialize-textarea" }),
 	          React.createElement(
 	            "label",
 	            null,
@@ -139,7 +139,7 @@
 	          ),
 	          React.createElement(
 	            "button",
-	            null,
+	            { className: "btn right" },
 	            "Tweet"
 	          )
 	        )
