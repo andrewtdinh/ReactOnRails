@@ -2,9 +2,9 @@ import TweetBox from './components/TweetBox';
 import TweetList from './components/TweetList';
 
 let mockTweets = [
-  {name: 'Andrew Dinh', body: 'My #FirstTweet'},
-  {name: 'Andrew Dinh', body: 'My #SecondTweet'},
-  {name: 'Andrew Dinh', body: 'My #ThirdTweet'}
+  {id: 1, name: 'Andrew Dinh', body: 'My #FirstTweet'},
+  {id: 2, name: 'Andrew Dinh', body: 'My #SecondTweet'},
+  {id: 3, name: 'Andrew Dinh', body: 'My #ThirdTweet'}
 ];
 
 class Main extends React.Component {
