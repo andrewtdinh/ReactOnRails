@@ -214,6 +214,25 @@
 	              null,
 	              "My #FirstTweet"
 	            )
+	          ),
+	          React.createElement(
+	            "li",
+	            { className: "collection-item avatar" },
+	            React.createElement(
+	              "i",
+	              { className: "material-icons circle" },
+	              "person_pin"
+	            ),
+	            React.createElement(
+	              "span",
+	              { className: "title" },
+	              "Andrew Dinh"
+	            ),
+	            React.createElement(
+	              "p",
+	              null,
+	              "My #FirstTweet"
+	            )
 	          )
 	        )
 	      );
