@@ -198,18 +198,31 @@
 	          null,
 	          React.createElement(
 	            "li",
-	            null,
-	            "Tweet One"
-	          ),
-	          React.createElement(
-	            "li",
-	            null,
-	            "Tweet Two"
-	          ),
-	          React.createElement(
-	            "li",
-	            null,
-	            "Tweet Three"
+	            { "class": "collection-item avatar" },
+	            React.createElement(
+	              "i",
+	              { "class": "material-icons circle" },
+	              "person_pin"
+	            ),
+	            React.createElement(
+	              "span",
+	              { "class": "title" },
+	              "Andrew Dinh"
+	            ),
+	            React.createElement(
+	              "p",
+	              null,
+	              "My #FirstTweet"
+	            ),
+	            React.createElement(
+	              "a",
+	              { href: "#!", "class": "secondary-content" },
+	              React.createElement(
+	                "i",
+	                { "class": "material-icons" },
+	                "grade"
+	              )
+	            )
 	          )
 	        )
 	      );
