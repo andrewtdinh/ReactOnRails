@@ -8,10 +8,13 @@ let mockTweets = [
 ];
 
 class Main extends React.Component {
+  addTweet(tweetToAdd){
+    // mockTweets.unshift({...})
+  },
   render() {
     return (
       <div className="container">
-        <TweetBox />
+        <TweetBox sendTweet={this.addTweet.bind(this)}/>
         <TweetList tweets={mockTweets}/>
       </div>
     );
