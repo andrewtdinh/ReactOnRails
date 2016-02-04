@@ -72,20 +72,28 @@
 	var Main = function (_React$Component) {
 	  _inherits(Main, _React$Component);
 	
-	  function Main() {
+	  function Main(props) {
 	    _classCallCheck(this, Main);
 	
-	    return _possibleConstructorReturn(this, Object.getPrototypeOf(Main).apply(this, arguments));
+	    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(Main).call(this, props));
+	
+	    _this.state = { tweetList: mockTweets };
+	    return _this;
 	  }
 	
 	  _createClass(Main, [{
+	    key: 'addTweet',
+	    value: function addTweet(tweetToAdd) {
+	      // mockTweets.unshift({...})
+	    }
+	  }, {
 	    key: 'render',
 	    value: function render() {
 	      return React.createElement(
 	        'div',
 	        { className: 'container' },
-	        React.createElement(_TweetBox2.default, null),
-	        React.createElement(_TweetList2.default, { tweets: mockTweets })
+	        React.createElement(_TweetBox2.default, { sendTweet: this.addTweet.bind(this) }),
+	        React.createElement(_TweetList2.default, { tweets: this.state.tweetList })
 	      );
 	    }
 	  }]);
