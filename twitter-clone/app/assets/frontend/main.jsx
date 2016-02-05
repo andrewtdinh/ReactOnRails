@@ -16,6 +16,7 @@ class Main extends React.Component {
   addTweet(tweetToAdd){
     let newTweetList = this.state.tweetList;
     newTweetList.unshift({id: Date.now(), name: 'Guest', body: tweetToAdd});
+    this.setState({tweetList: newTweetList})
   }
 
   render() {

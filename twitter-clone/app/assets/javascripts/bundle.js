@@ -86,6 +86,7 @@
 	    value: function addTweet(tweetToAdd) {
 	      var newTweetList = this.state.tweetList;
 	      newTweetList.unshift({ id: Date.now(), name: 'Guest', body: tweetToAdd });
+	      this.setState({ tweetList: newTweetList });
 	    }
 	  }, {
 	    key: 'render',
