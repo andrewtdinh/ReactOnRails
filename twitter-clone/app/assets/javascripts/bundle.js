@@ -84,7 +84,8 @@
 	  _createClass(Main, [{
 	    key: 'addTweet',
 	    value: function addTweet(tweetToAdd) {
-	      // mockTweets.unshift({...})
+	      var newTweetList = this.state.tweetList;
+	      newTweetList.unshift({ id: Date.now(), name: 'Guest', body: tweetToAdd });
 	    }
 	  }, {
 	    key: 'render',
