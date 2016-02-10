@@ -5,5 +5,6 @@ class ProfileController < ApplicationController
   end
 
   def update
+    current_user.update(...)
   end
 end
